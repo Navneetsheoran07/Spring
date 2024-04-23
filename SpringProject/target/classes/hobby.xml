@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+	<bean id="h1" class="org.spring.Hobby">
+
+		<property name="Indoor" value="Caram"></property>
+		<property name="outDoor" value="Cricket"></property>
+
+	</bean>
+	<bean id="h2" class="org.spring.Hobby">
+
+		<property name="Indoor" value="Badminton"></property>
+		<property name="outDoor" value="Football"></property>
+
+	</bean>
+
+	<bean id="s1" class="org.spring.Stud">
+		<property name="id" value="1"></property>
+		<property name="name" value="Aman"></property>
+		<property name="course" value="Bca"></property>
+		<property name="hobbylist">
+			<list>
+				<ref bean="h1" />
+
+				<ref bean="h2" />
+			</list>
+
+
+		</property>
+
+	</bean>
+</beans>

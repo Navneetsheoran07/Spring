@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+
+	<bean id="st" class="org.spring.Student">
+		<property name="id" value="01"></property>
+		<property name="name" value="aman"></property>
+		<property name="course" value="java"></property>
+		<property name="age" value="21"></property>
+		<property name="address" value="Delhi"></property>
+
+
+
+	</bean>
+	<bean id="st2" class="org.spring.Student">
+		<property name="id" value="02"></property>
+		<property name="name" value="chaman"></property>
+		<property name="course" value="java"></property>
+		<property name="age" value="22"></property>
+		<property name="address" value="Delhi"></property>
+
+
+
+	</bean>
+
+
+
+
+
+</beans>
